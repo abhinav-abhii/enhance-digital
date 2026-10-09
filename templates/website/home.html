@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Enhance Digital | Digital Marketing Agency</title>
+
+<meta
+    name="description"
+    content="Enhance Digital helps brands grow through SEO, social media marketing, Google Ads, web development, content marketing and branding."
+>
+
+<meta
+    name="keywords"
+    content="digital marketing agency, SEO, social media marketing, Google Ads, web development, branding"
+>
+
+
+
+<meta name="author" content="Enhance Digital">
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Our Custom CSS -->
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    
+    <!-- Bootstrap JavaScript -->
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+<link
+    rel="icon"
+    type="image/svg+xml"
+    href="{% static 'images/favicon.svg' %}"
+>
+
+
+
+</head>
+
+<body>
+    {% if messages %}
+
+    <div class="messages-container">
+
+        {% for message in messages %}
+
+            <div class="site-message {{ message.tags }}">
+                {{ message }}
+            </div>
+
+        {% endfor %}
+
+    </div>
+
+{% endif %}
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+
+            <!-- Logo -->
+            <a class="navbar-brand fw-bold" href="#">
+                ENHANCE<span>+</span>
+            </a>
+
+            <!-- Mobile menu button -->
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navigation links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#work">Work</a>
+                    </li>
+
+                    <li class="nav-item ms-lg-3">
+                        <a class="nav-cta" href="#contact">
+                            Let's Talk
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" id="home">
+
+        <div class="container">
+
+            <div class="row align-items-center min-vh-100">
+
+                <!-- Hero text -->
+
+                <div class="col-lg-7">
+
+                    <p class="hero-label">
+                        DIGITAL MARKETING AGENCY
+                    </p>
+
+                    <h1 class="hero-title">
+                        We turn
+                        <span>attention</span>
+                        into growth.
+                    </h1>
+
+                    <p class="hero-description">
+                        We help ambitious brands grow through data-driven
+                        digital marketing, creative strategy and powerful
+                        technology.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#contact" class="btn-primary-custom">
+                            Start a Project
+                        </a>
+
+                        <a href="#work" class="btn-secondary-custom">
+                            View Our Work
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= STATS ================= -->
+
+<section class="stats-section">
+
+    <div class="container">
+
+        <div class="row text-center reveal">
+
+            <div class="col-6 col-lg-3">
+                <div class="stat-item">
+                    <h2>50+</h2>
+                    <p>Brands Helped</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3">
+                <div class="stat-item">
+                    <h2>120+</h2>
+                    <p>Projects Delivered</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3">
+                <div class="stat-item">
+                    <h2>4.9/5</h2>
+                    <p>Client Rating</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3">
+                <div class="stat-item">
+                    <h2>3×</h2>
+                    <p>Average Growth</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= SERVICES ================= -->
+
+<section class="services-section" id="services">
+
+    <div class="container">
+
+        <!-- Section heading -->
+        <div class="section-heading">
+
+            <p class="section-label">
+                WHAT WE DO
+            </p>
+
+            <h2 class="reveal">
+                Everything you need<br>
+                to <span>grow online.</span>
+            </h2>
+
+            <p class="section-description">
+                From strategy to execution, we help brands build
+                a stronger digital presence and turn attention into
+                measurable business growth.
+            </p>
+
+        </div>
+
+
+        <!-- Services -->
+
+        <div class="row g-4 mt-4 reveal">
+
+            <!-- SEO -->
+            <div class="col-md-6 col-lg-4">
+
+                <div class="service-card">
+
+                    <div class="service-number">
+                        01
+                    </div>
+
+                    <h3>SEO</h3>
+
+                    <p>
+                        Improve your search visibility and attract
+                        the right audience through powerful SEO strategies.
+                    </p>
+
+                    <a href="#" class="service-link">
+                        Explore service →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Social Media -->
+            <div class="col-md-6 col-lg-4">
+
+                <div class="service-card">
+
+                    <div class="service-number">
+                        02
+                    </div>
+
+                    <h3>Social Media</h3>
+
+                    <p>
+                        Build a stronger social presence with content
+                        strategies designed to engage and convert.
+                    </p>
+
+                    <a href="#" class="service-link">
+                        Explore service →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Google Ads -->
+            <div class="col-md-6 col-lg-4">
+
+                <div class="service-card">
+
+                    <div class="service-number">
+                        03
+                    </div>
+
+                    <h3>Google Ads</h3>
+
+                    <p>
+                        Reach potential customers at the right moment
+                        with targeted and performance-driven campaigns.
+                    </p>
+
+                    <a href="#" class="service-link">
+                        Explore service →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Web Development -->
+            <div class="col-md-6 col-lg-4">
+
+                <div class="service-card">
+
+                    <div class="service-number">
+                        04
+                    </div>
+
+                    <h3>Web Development</h3>
+
+                    <p>
+                        Create fast, modern and conversion-focused
+                        websites that turn visitors into customers.
+                    </p>
+
+                    <a href="#" class="service-link">
+                        Explore service →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Content Marketing -->
+            <div class="col-md-6 col-lg-4">
+
+                <div class="service-card">
+
+                    <div class="service-number">
+                        05
+                    </div>
+
+                    <h3>Content Marketing</h3>
+
+                    <p>
+                        Tell your brand story with content that builds
+                        trust, authority and long-term audience growth.
+                    </p>
+
+                    <a href="#" class="service-link">
+                        Explore service →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Branding -->
+            <div class="col-md-6 col-lg-4">
+
+                <div class="service-card">
+
+                    <div class="service-number">
+                        06
+                    </div>
+
+                    <h3>Branding</h3>
+
+                    <p>
+                        Build a memorable brand identity that stands out
+                        and connects with your target audience.
+                    </p>
+
+                    <a href="#" class="service-link">
+                        Explore service →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about-section" id="about">
+
+    <div class="container">
+<!-- divide the section into two parts, left and right -->
+        <div class="row align-items-center g-5 reveal">
+
+            <!-- Left side -->
+            <div class="col-lg-6">
+
+                <p class="section-label">
+                    WHY ENHANCE
+                </p>
+
+                <h2 class="about-title">
+                    We don't just
+                    <span>market.</span>
+                    We build growth.
+                </h2>
+
+                <p class="about-description">
+                    Digital marketing shouldn't be about collecting likes
+                    or chasing temporary trends. We combine strategy,
+                    creativity and technology to build digital experiences
+                    that create real business results.
+                </p>
+
+                <a href="#" class="btn-primary-custom">
+                    Learn More
+                </a>
+
+            </div>
+
+
+            <!-- Right side -->
+            <div class="col-lg-6">
+
+                <div class="about-features">
+
+                    <div class="feature-item">
+
+                        <div class="feature-number">
+                            01
+                        </div>
+
+                        <div>
+                            <h3>Strategy First</h3>
+
+                            <p>
+                                Every successful campaign starts with a
+                                clear strategy built around your business goals.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="feature-item">
+
+                        <div class="feature-number">
+                            02
+                        </div>
+
+                        <div>
+                            <h3>Creative Thinking</h3>
+
+                            <p>
+                                We create ideas and experiences that help
+                                brands stand out in crowded digital spaces.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="feature-item">
+
+                        <div class="feature-number">
+                            03
+                        </div>
+
+                        <div>
+                            <h3>Data Driven</h3>
+
+                            <p>
+                                We use data and analytics to understand
+                                what works and continuously improve results.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="feature-item">
+
+                        <div class="feature-number">
+                            04
+                        </div>
+
+                        <div>
+                            <h3>Long-Term Growth</h3>
+
+                            <p>
+                                Our goal isn't a quick spike in traffic.
+                                We build systems designed for sustainable growth.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= WORK ================= -->
+
+<section class="work-section" id="work">
+
+    <div class="container">
+
+        <!-- Section heading -->
+
+        <div class="work-heading">
+
+            <div>
+                <p class="section-label">
+                    SELECTED WORK
+                </p>
+
+                <h2>
+                    Ideas that make
+                    <span>an impact.</span>
+                </h2>
+            </div>
+
+            <p>
+                A selection of projects where strategy,
+                creativity and technology came together
+                to create meaningful results.
+            </p>
+
+        </div>
+
+
+        <!-- Projects -->
+
+        <div class="row g-4 mt-5 reveal">
+
+            <!-- Project 1 -->
+
+            <div class="col-lg-7">
+
+                <div class="project-card project-large">
+
+                    <div class="project-content">
+
+                        <span class="project-category">
+                            BRANDING & DIGITAL
+                        </span>
+
+                        <h3>
+                            Nova Finance
+                        </h3>
+
+                        <p>
+                            Building a modern digital identity
+                            for a next-generation financial brand.
+                        </p>
+
+                        <a href="#" class="project-link">
+                            View Project →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Project 2 -->
+
+            <div class="col-lg-5">
+
+                <div class="project-card project-small">
+
+                    <div class="project-content">
+
+                        <span class="project-category">
+                            SOCIAL MEDIA
+                        </span>
+
+                        <h3>
+                            Aura Fashion
+                        </h3>
+
+                        <p>
+                            Growing a fashion brand through
+                            creative social campaigns.
+                        </p>
+
+                        <a href="#" class="project-link">
+                            View Project →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Project 3 -->
+
+            <div class="col-lg-5">
+
+                <div class="project-card project-small">
+
+                    <div class="project-content">
+
+                        <span class="project-category">
+                            WEB DEVELOPMENT
+                        </span>
+
+                        <h3>
+                            Velo Studio
+                        </h3>
+
+                        <p>
+                            A high-converting website designed
+                            for a creative technology company.
+                        </p>
+
+                        <a href="#" class="project-link">
+                            View Project →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Project 4 -->
+
+            <div class="col-lg-7">
+
+                <div class="project-card project-large">
+
+                    <div class="project-content">
+
+                        <span class="project-category">
+                            PERFORMANCE MARKETING
+                        </span>
+
+                        <h3>
+                            Peak Fitness
+                        </h3>
+
+                        <p>
+                            Helping a fitness brand generate
+                            more leads through targeted campaigns.
+                        </p>
+
+                        <a href="#" class="project-link">
+                            View Project →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+
+<section class="testimonials-section" >
+
+    <div class="container">
+
+        <div class="text-center testimonials-heading">
+
+            <p class="section-label">
+                CLIENT STORIES
+            </p>
+
+            <h2>
+                Don't just take
+                <span>our word for it.</span>
+            </h2>
+
+        </div>
+
+
+        <div class="row g-4 mt-5 reveal">
+
+            <!-- Testimonial 1 -->
+
+            <div class="col-lg-4">
+
+                <div class="testimonial-card">
+
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+
+                    <p class="testimonial-text">
+                        "Enhance completely transformed the way
+                        we approach digital marketing. Within months,
+                        we started seeing a significant increase in
+                        qualified leads."
+                    </p>
+
+                    <div class="client">
+
+                        <div class="client-avatar">
+                            AK
+                        </div>
+
+                        <div>
+                            <h4>Arjun Kumar</h4>
+                            <p>Founder, Nova Finance</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Testimonial 2 -->
+
+            <div class="col-lg-4">
+
+                <div class="testimonial-card">
+
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+
+                    <p class="testimonial-text">
+                        "The team understood our brand from day one.
+                        Their creativity and attention to detail helped
+                        us build a much stronger presence online."
+                    </p>
+
+                    <div class="client">
+
+                        <div class="client-avatar">
+                            SP
+                        </div>
+
+                        <div>
+                            <h4>Sarah Parker</h4>
+                            <p>Marketing Director, Aura</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Testimonial 3 -->
+
+            <div class="col-lg-4">
+
+                <div class="testimonial-card">
+
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+
+                    <p class="testimonial-text">
+                        "From our website to our advertising campaigns,
+                        Enhance helped us create a digital strategy that
+                        actually delivers results."
+                    </p>
+
+                    <div class="client">
+
+                        <div class="client-avatar">
+                            RV
+                        </div>
+
+                        <div>
+                            <h4>Rahul Varma</h4>
+                            <p>CEO, Velo Studio</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= CTA ================= -->
+
+<section class="cta-section">
+
+    <div class="container">
+
+        <div class="cta-box">
+
+            <p class="section-label">
+                HAVE A PROJECT IN MIND?
+            </p>
+
+            <h2>
+                Let's build something
+                <span>great together.</span>
+            </h2>
+
+            <p>
+                Tell us about your business, your goals and what
+                you're trying to achieve. We'll take it from there.
+            </p>
+
+            <a href="#contact" class="btn-primary-custom">
+                Start a Conversation →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= CONTACT ================= -->
+
+<section class="contact-section" id="contact">
+
+    <div class="container">
+
+        <div class="row g-5 reveal">
+
+            <!-- Left -->
+
+            <div class="col-lg-5">
+
+                <p class="section-label">
+                    GET IN TOUCH
+                </p>
+
+                <h2 class="contact-title">
+                    Let's talk about
+                    your <span>next move.</span>
+                </h2>
+
+                <p class="contact-description">
+                    Have a question, an idea or a project in mind?
+                    Fill out the form and our team will get back to you.
+                </p>
+
+                <div class="contact-details">
+
+                    <div class="contact-detail">
+
+                        <span>EMAIL</span>
+
+                        <p>
+                            enhancedigital@gmail.com
+                        </p>
+
+                    </div>
+
+                    <div class="contact-detail">
+
+                        <span>LOCATION</span>
+
+                        <p>
+                            Kerala, India
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Right -->
+
+            <div class="col-lg-7">
+
+                <div class="contact-form-wrapper">
+
+                    <form method="POST">
+
+                        {% csrf_token %}
+
+                        <div class="row g-4">
+
+                            <div class="col-md-6">
+
+                                <label for="name">
+                                    Your Name
+                                </label>
+
+                                <input
+                                    name="name"
+                                    type="text"
+                                    id="'name"
+                                    class="form-control custom-input"
+                                    placeholder="John Doe"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="col-md-6">
+
+                                <label for="email">
+                                    Email Address
+                                </label>
+
+                                <input
+                                    type="email"
+                                    name="email"
+                                    id="email"
+                                    class="form-control custom-input"
+                                    placeholder="john@example.com"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="col-12">
+
+                                <label for="company">
+                                    Company
+                                </label>
+
+                                <input
+                                    type="text"
+                                    name="company"
+                                    id="company"
+                                    class="form-control custom-input"
+                                    placeholder="Your company name"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="col-12">
+
+                                <label for="message">
+                                    Tell us about your project
+                                </label>
+
+                                <textarea
+                                    name="message"
+                                    id="message"
+                                    class="form-control custom-input"
+                                    rows="5"
+                                    placeholder="What are you looking to achieve?"
+                                    required
+                                ></textarea>
+
+                            </div>
+
+
+                            <div class="col-12">
+
+                                <button
+                                    type="submit"
+                                    class="form-submit"
+                                >
+                                    Send Message →
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="footer">
+    <div class="container">
+
+        <div class="row gy-5">
+
+            <!-- Brand -->
+            <div class="col-lg-5">
+                <a href="#home" class="footer-brand">
+                    ENHANCE<span>+</span>
+                </a>
+
+                <p class="footer-description">
+                    We turn attention into growth through strategy,
+                    creativity and data-driven digital marketing.
+                </p>
+
+                <div class="footer-socials">
+                    <a href="#" aria-label="Instagram">IG</a>
+                    <a href="#" aria-label="LinkedIn">LI</a>
+                    <a href="#" aria-label="Facebook">FB</a>
+                </div>
+            </div>
+
+
+            <!-- Navigation -->
+            <div class="col-6 col-lg-3">
+                <h5>Explore</h5>
+
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#work">Our Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+
+            <!-- Services -->
+            <div class="col-6 col-lg-4">
+                <h5>Services</h5>
+
+                <ul class="footer-links">
+                    <li><a href="#services">SEO</a></li>
+                    <li><a href="#services">Social Media Marketing</a></li>
+                    <li><a href="#services">Google Ads</a></li>
+                    <li><a href="#services">Web Development</a></li>
+                    <li><a href="#services">Branding</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Enhance Digital. All rights reserved.
+            </p>
+
+            <a href="#home" class="back-to-top">
+                Back to top ↑
+            </a>
+
+        </div>
+
+    </div>
+</footer>
+
+
+<script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
+    
+
